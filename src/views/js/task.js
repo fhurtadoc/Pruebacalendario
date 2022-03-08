@@ -17,7 +17,7 @@ $(document).ready( function () {
             data:data
         }).done((res)=>{
             var data=JSON.parse(res);
-           data.forEach(element => {
+        data.forEach(element => {
                 let style="active";
                 if(element.status!=0){
                     let style="inactive";

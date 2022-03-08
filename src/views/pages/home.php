@@ -12,20 +12,32 @@
 </head>
 <body>
     <div class="continer">
-        <div class="card-login">
-            <label for="usuario">Ingresa</label>
-            <input type="text" name="usuario" id="usua_login">
-            <label for="pass"></label>
-            <input type="text" name="pass" id="pass_login"> 
-            <button  onclick="login()" >Ingresar</button>                        
-        </div>
-        <div class="card_singup">
-            <label for="usuario">Registrate</label>
-            <input type="text" name="usuario" id="usua_singup">
-            <label for="pass"></label>
-            <input type="text" name="pass" id="pass_singup">                        
-            <a href="#" onclick="singUp()">Registrar</a>
-        </div>
+        <form >
+            <div class="card-login"> <p>Si ya estas registrado ingresa </p>
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usua_login">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Contraseña</label>
+                    <input type="text" name="pass" id="pass_login"> 
+                </div>
+                <button class="btn btn-primary" onclick="login()" >Ingresar</button>                        
+            </div>
+            <div class="card_singup">
+
+            <div class="form-group"><br>
+            <p>Si aun no estas registrado llena estos datos </p>
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usua_singup">
+            </div>
+            <div class="form-group">                
+                <label for="pass">Escribe una contraseña</label>
+                <input type="text" name="pass" id="pass_singup">                        
+            </div>
+                <a href="#"  class="btn btn-info" onclick="singUp()">Registrar</a>
+            </div>
+        </form>        
     </div>
 </div>    
 </body>
